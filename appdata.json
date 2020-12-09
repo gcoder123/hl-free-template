@@ -1,0 +1,48 @@
+{
+    "title": "Сеть игровых серверов серверов PROJECT.NAME",
+
+    "servers": [
+        {
+            "platform": "css",
+            "address": "46.174.53.82:27015"
+        },
+        {
+            "platform": "css",
+            "address": "37.230.210.87:27004"
+        },
+        {
+            "platform": "csgo",
+            "address": "46.174.48.247:27015"
+        }
+    ],
+
+    "navigation": [
+        {
+            "text": "Статистика",
+            "link": "/statistics",
+            "is_spa": true
+        },
+        {
+            "text": "Форум",
+            "link": "/forum",
+            "is_spa": true
+        },
+        {
+            "text": "Система банов",
+            "link": "/sourcebans",
+            "is_spa": true
+        },
+        {
+            "text": "ВКонтакте",
+            "link": "https://vk.com/",
+            "is_spa": false
+        },
+        {
+            "text": "Покупка доната",
+            "link": "/donate",
+            "is_spa": true
+        }
+    ],
+
+    "copyright": "2020 &copy; Специально для <a href='https://hlmod.ru' target='_blank'>HLMOD</a>."
+}

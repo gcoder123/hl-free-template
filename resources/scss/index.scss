@@ -1,0 +1,44 @@
+// IMPORT SECTION
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+
+
+// FONTS LOAD SECTION
+@mixin font($fontName, $fontStyle, $fontWeight, $fontUrl) {
+    @font-face {
+        font-family: $fontName;
+        font-style: $fontStyle;
+        font-weight: $fontWeight;
+        src: local($fontName), url($fontUrl) format('woff');
+    }
+}
+
+@include font('Gilroy', normal, 100, '/public/fonts/Gilroy-Thin.woff');
+@include font('Gilroy', normal, 200, '/public/fonts/Gilroy-UltraLight.woff');
+@include font('Gilroy', normal, 300, '/public/fonts/Gilroy-Light.woff');
+@include font('Gilroy', normal, 400, '/public/fonts/Gilroy-Regular.woff');
+@include font('Gilroy', normal, 500, '/public/fonts/Gilroy-Medium.woff');
+@include font('Gilroy', normal, 600, '/public/fonts/Gilroy-SemiBold.woff');
+@include font('Gilroy', normal, 700, '/public/fonts/Gilroy-Bold.woff');
+@include font('Gilroy', normal, 800, '/public/fonts/Gilroy-ExtraBold.woff');
+@include font('Gilroy', normal, 900, '/public/fonts/Gilroy-Heavy.woff');
+
+
+// GENERAL APPLICATION SECTION
+* {
+    font-family: Gilroy, sans-serif;
+}
+
+body {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+#clipboard {
+    position: fixed;
+    left: -100vh;
+    z-index: -999;
+}
